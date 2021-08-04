@@ -1,0 +1,22 @@
+.payment h1 {
+    font-size: 2rem;
+}
+
+.payment h3 {
+    font-size: 1.2rem;
+}
+
+.payment p {
+    margin: 1rem 0;
+}
+
+.payment h1,
+.payment h3 {
+    margin: .5rem;
+}
+
+.payment img {
+    width: 100%;
+    margin: 1rem 0;
+
+}

@@ -1,0 +1,38 @@
+header {
+    background: rgb(16, 38, 64);
+    background: linear-gradient(
+            0deg,
+            rgba(16, 38, 64, 1) 0%,
+            rgba(40, 40, 40, 1) 100%
+    );
+    background-repeat: no-repeat;
+    height: 5.5rem
+}
+
+.section {
+    padding: 0 calc(50% - 590px);
+    height: 100%;
+}
+
+.header-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 4fr 1fr;
+    height: 100%;
+}
+
+.burger-menu, .search-panel, .logo, .cart {
+    margin: auto;
+}
+
+.logo {
+    margin-top: 26px;
+}
+
+.cart {
+    margin-top: 16px;
+}
+
+.search-panel {
+    width: 80%;
+}
+

@@ -1,0 +1,11 @@
+.top-container {
+    margin: 2rem 0;
+}
+
+.stock-slides {
+    width: 100%;
+}
+
+.slick-prev:before, .slick-next:before {
+    color: rgb(16, 38, 64) !important;
+}

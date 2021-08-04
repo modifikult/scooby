@@ -1,0 +1,22 @@
+.cooperation h1 {
+    font-size: 2rem;
+}
+
+.cooperation h3 {
+    font-size: 1.2rem;
+}
+
+.cooperation p {
+    margin: 1rem 0;
+}
+
+.cooperation h1,
+.cooperation h3 {
+    margin: .5rem;
+}
+
+.cooperation img {
+    width: 100%;
+    margin: 1rem 0;
+
+}

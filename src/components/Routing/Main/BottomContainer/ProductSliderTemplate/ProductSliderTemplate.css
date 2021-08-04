@@ -1,0 +1,58 @@
+.carousel-box {
+    margin: 2rem 0;
+}
+
+.card-item {
+    width: 95% !important;
+    border: 1px solid lightgrey;
+    box-shadow: 3px 3px 3px 1px grey;
+    border-radius: 5px;
+    margin: 2% 2%;
+
+}
+
+.card-wrapper {
+    width: 92%;
+    margin: .5rem auto;
+}
+
+.card-item-img {
+    width: 100%;
+}
+
+.card-item-name {
+    margin: .6rem 0;
+    height: 5rem;
+}
+
+.card-item-name+div {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.block-price p:nth-child(1) {
+    text-decoration: line-through;
+    color: grey;
+}
+
+.block-price p:nth-child(2) {
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.block-button button {
+    background: #cf6d6d;
+    padding: .5rem;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+
+.block-button button:hover {
+    background: #783c3c;
+    cursor: pointer;
+}
+
+.block-button {
+    display: grid;
+}

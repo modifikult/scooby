@@ -1,0 +1,93 @@
+.menu {
+   position: fixed;
+    width: 100vw;
+    height: 100vh;
+    left: 0;
+    z-index: 5;
+    transform: translateX(-125%);
+    transition: all .2s;
+}
+
+.menu.active {
+    transform: translateX(0);
+}
+
+.menu__blur {
+    backdrop-filter: blur(4px);
+    position: absolute;
+    left: 25%;
+    width: 100vw;
+    height: 100vh;
+}
+
+.menu__content {
+    width: 25%;
+    height: 100%;
+    background: rgb(16, 38, 64);
+}
+
+.menu__content p {
+    color: white;
+    width: 100%;
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.menu__content p:hover {
+    cursor: pointer;
+    color: grey;
+}
+
+.menu__content li {
+    list-style: none;
+    width: 100%;
+}
+
+.menu__content li:hover {
+    background: black;
+}
+
+.menu__content li .content__category {
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 1.8rem;
+    width: 80%;
+}
+
+.menu__content li .content__category:hover {
+
+}
+
+.menu__content li span {
+    text-align: center;
+    width: 12%;
+}
+
+.menu__content li span:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.menu__content li .content__category ,
+.menu__content li span {
+    padding: 1.5rem 0 1.5rem 1rem;
+    color: #cf6d6d;
+    display: inline-block;
+    font-size: 1.5rem;
+}
+
+.content__level-1 {
+    width: 25%;
+    position: absolute;
+    transform: translateX(0);
+}
+
+.content__level-2,
+.content__level-3 {
+    top: 0;
+    width: 100%;
+    position: absolute;
+    transform: translateX(-100%);
+    transition: all .2s;
+}

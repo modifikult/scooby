@@ -1,0 +1,20 @@
+.about-site {
+    margin: 5rem 1rem;
+}
+
+.about-site h4 {
+    margin-top: 2rem;
+}
+
+.about-site hr {
+    border-color: white;
+    margin-bottom: 2rem;
+}
+
+.about-site ol {
+    padding: 0 0 0 1.2rem;
+}
+
+.about-site li {
+    margin: 0.7rem 0;
+}

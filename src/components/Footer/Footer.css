@@ -1,0 +1,49 @@
+footer {
+    background: rgb(16, 38, 64);
+    background: linear-gradient(
+            0deg,
+            rgba(16, 38, 64, 1) 0%,
+            rgba(40, 40, 40, 1) 100%
+    );
+    background-repeat: no-repeat;
+    height: 5.5rem
+}
+
+footer .section nav {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    height: 100%;
+}
+
+.navigate{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    height: 100%;
+}
+.social-networks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100%;
+}
+
+.social-networks a img{
+    display: inline-block;
+    width: 34px;
+}
+
+.navigate a, .social-networks a {
+    text-decoration: none;
+    color: white;
+    margin: auto;
+}
+
+.social-networks a {
+    height: 34px;
+}
+
+.copyright {
+    font-weight: bold;
+    text-align: center;
+}
+
+
