@@ -1,8 +1,12 @@
-.carousel-box {
+.offer-sliders__carousel {
     margin: 2rem 0;
 }
 
-.card-item {
+.carousel__header {
+    font-size: 3rem;
+}
+
+.carousel__card-item {
     width: 95% !important;
     border: 1px solid lightgrey;
     box-shadow: 3px 3px 3px 1px grey;
@@ -11,36 +15,36 @@
 
 }
 
-.card-wrapper {
+.carousel__card-wrapper {
     width: 92%;
     margin: .5rem auto;
 }
 
-.card-item-img {
+.carousel__item-img {
     width: 100%;
 }
 
-.card-item-name {
+.carousel__item-name {
     margin: .6rem 0;
     height: 5rem;
 }
 
-.card-item-name+div {
+.carousel__item-name + div {
     display: grid;
     grid-template-columns: 3fr 2fr;
 }
 
-.block-price p:nth-child(1) {
+.carousel__price p:first-child {
     text-decoration: line-through;
     color: grey;
 }
 
-.block-price p:nth-child(2) {
+.carousel__price p:last-child {
     font-size: 1.3rem;
     font-weight: bold;
 }
 
-.block-button button {
+.carousel__button {
     background: #cf6d6d;
     padding: .5rem;
     border: none;
@@ -48,11 +52,7 @@
     color: white;
 }
 
-.block-button button:hover {
+.carousel__button:hover {
     background: #783c3c;
     cursor: pointer;
-}
-
-.block-button {
-    display: grid;
 }

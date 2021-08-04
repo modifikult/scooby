@@ -4,7 +4,7 @@ import "./AboutSite.css";
 class AboutSite extends React.Component {
     render() {
         return (
-            <div className="section about-site">
+            <div className="about-site">
                 <h4>Scooby.ua - Интернет-магазин цифровой техники и электроники</h4>
                 <hr />
                 <h5>10 лет на рынке Украины.</h5>

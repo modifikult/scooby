@@ -5,7 +5,7 @@ import cart from './shopping-cart.png'
 class Cart extends React.Component {
     render() {
         return (
-            <img src={cart} alt="cart" id='cart'/>
+            <img src={cart} alt="cart" id='cart' className='header__cart'/>
         );
     }
 }

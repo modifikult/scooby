@@ -4,7 +4,7 @@ import {
     Route
 } from "react-router-dom";
 import Main from "./Main/Main";
-import NotFoundPage from "./NotFoundPage/NotFoundPage";
+import PageNotFound from "./PageNotFound/PageNotFound";
 import Guarantee from "./UsefulPages/Guarantee/Guarantee";
 import Delivery from "./UsefulPages/Delivery/Delivery";
 import Payment from "./UsefulPages/Payment/Payment";
@@ -14,28 +14,24 @@ import {menu} from '../Header/PopUpMenu/menu'
 
 
 class Routing extends React.Component {
-
     componentDidMount() {
 
     }
 
-
     render() {
-
         const menuCategoriesName = []
         menu.map(elem => {
             menuCategoriesName.push(elem.name)
             elem.submenu.map(elem => {
                 menuCategoriesName.push(elem.name)
                 elem.submenu.map(elem => {
-                  return menuCategoriesName.push(elem.name)
+                    return menuCategoriesName.push(elem.name)
                 })
                 return elem
             })
             return elem
         })
         return (
-
             <Switch>
                 <Route exact path='/' component={Main}/>
                 <Route exact path='/guarantee' component={Guarantee}/>
@@ -44,12 +40,11 @@ class Routing extends React.Component {
                 <Route exact path='/cooperation' component={Cooperation}/>
                 {menuCategoriesName.map(elem => (
                     <Route exact path={'/' + elem.replace(/ /, '-')} key={elem}>
-                        <ProductsPage />
+                        <ProductsPage/>
                     </Route>
                 ))}
-                <Route component={NotFoundPage}/>
+                <Route component={PageNotFound}/>
             </Switch>
-
         )
     }
 }

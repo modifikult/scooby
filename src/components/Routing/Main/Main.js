@@ -1,6 +1,6 @@
 import React from 'react'
-import TopContainer from "./TopContainer/TopContainer";
-import BottomContainer from "./BottomContainer/BottomContainer";
+import StockSlider from "./StockSlider/StockSlider";
+import OfferSliders from "./OfferSliders/OfferSliders";
 import firebase from "firebase/app";
 import 'firebase/database'
 import AboutSite from "./AboutSite/AboutSite";
@@ -26,35 +26,35 @@ class Main extends React.Component {
         } else {
             firebase.app()
         }
-            const db = firebase.database().ref().child('products')
-            db.on('value', snap => {
-                const dbObj = snap.val()
-                let popularItems = []
-                let newItems = []
+        const db = firebase.database().ref().child('products')
+        db.on('value', snap => {
+            const dbObj = snap.val()
+            let popularItems = []
+            let newItems = []
 
-                for (let item in dbObj) {
-                    const elem = dbObj[item]
-                    for (let prod in elem) {
-                        if(elem[prod].category === 'popular') {
-                            popularItems.push(elem[prod])
-                        }
-                        if(elem[prod].category === 'new') {
-                            newItems.push(elem[prod])
-                        }
+            for (let item in dbObj) {
+                const elem = dbObj[item]
+                for (let prod in elem) {
+                    if (elem[prod].category === 'popular') {
+                        popularItems.push(elem[prod])
                     }
-
+                    if (elem[prod].category === 'new') {
+                        newItems.push(elem[prod])
+                    }
                 }
-                this.setState({
-                    newItems: newItems,
-                    popularItems: popularItems
-                })
+            }
+            this.setState({
+                newItems: newItems,
+                popularItems: popularItems
             })
-        }
+        })
+    }
+
     render() {
         return (
-            <div className="main">
-                <TopContainer/>
-                <BottomContainer newItems={this.state.newItems} popularItems={this.state.popularItems}/>
+            <div className="main container">
+                <StockSlider/>
+                <OfferSliders newItems={this.state.newItems} popularItems={this.state.popularItems}/>
                 <AboutSite/>
             </div>
         );

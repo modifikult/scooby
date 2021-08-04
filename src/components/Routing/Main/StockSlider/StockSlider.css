@@ -1,8 +1,8 @@
-.top-container {
+.main__stock-slider {
     margin: 2rem 0;
 }
 
-.stock-slides {
+.slide__img {
     width: 100%;
 }
 

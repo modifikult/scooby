@@ -1,3 +1,4 @@
-#cart {
+.header__cart {
+    margin: 16px auto auto auto;
     width: 54px;
 }

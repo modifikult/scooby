@@ -8,23 +8,23 @@ import {faMobileAlt} from "@fortawesome/free-solid-svg-icons";
 class Guarantee extends React.Component {
     render () {
         return (
-            <div className='section guarantee'>
+            <div className='guarantee'>
                 <h1>
                     Гарантия и сервисное обслуживание
                 </h1>
                 <ul>
-                    <li className='service'>
+                    <li className='guarantee__service'>
                         <FontAwesomeIcon icon={faCalendarAlt}></FontAwesomeIcon>
                         <p>Гарантированный обмен в течении 14 дней</p>
                     </li>
-                    <li className='service'>
+                    <li className='guarantee__service'>
                         <FontAwesomeIcon icon={faCog}></FontAwesomeIcon>
                         <p>
                             Бесплатный ремонт в течении гарантийного срока в фирменных сервисных центрах Украины и
                             Европы
                         </p>
                     </li>
-                    <li className='service'>
+                    <li className='guarantee__service'>
                         <FontAwesomeIcon icon={faMobileAlt}></FontAwesomeIcon>
                         <p>iPhone в пользование на время ремонта</p>
                     </li>
@@ -107,7 +107,7 @@ class Guarantee extends React.Component {
                 </p>
 
                 <p>
-                    <a className='phone' href="tel:(050)-050-0505">(050)-050-0505.</a>
+                    <a className='phone_big-number' href="tel:(050)-050-0505">(050)-050-0505.</a>
                     <br/>
                     Мы всегда готовы помочь
                 </p>

@@ -4,7 +4,7 @@ import './Delivery.css'
 class Delivery extends React.Component {
     render () {
         return (
-            <div className='section delivery'>
+            <div className='delivery'>
                 <h1>Доставка</h1>
                 <img src="https://firebasestorage.googleapis.com/v0/b/scooby-54939.appspot.com/o/Dostavka_zabrat_c_magazina.png?alt=media&token=c5eb9400-0685-402e-8394-7832a0184ccc" alt="free-delivery"/>
                 <h3>Хотите получить этот товар сегодня?</h3>

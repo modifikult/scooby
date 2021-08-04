@@ -1,14 +1,14 @@
 import React from 'react';
-import './NotFoundPage.css'
+import './PageNotFound.css'
 
-class NotFoundPage extends React.Component {
+class PageNotFound extends React.Component {
     render() {
         return (
-            <div className='not-found'>
+            <div className='page-not-found'>
                 <h1>This page is not found</h1>
             </div>
         )
     }
 }
 
-export default NotFoundPage
+export default PageNotFound

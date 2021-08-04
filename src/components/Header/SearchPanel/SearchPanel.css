@@ -1,23 +1,24 @@
-.search-panel-wrapper {
-    width: 100%;
+.header__search-panel {
+    width: 80%;
+    margin: auto;
 }
 
-.search-panel-input {
+.search-input {
     width: 70%;
     border-radius: 5px 0 0 5px;
 }
 
-.search-panel-button {
+.search-button {
     width: 28%;
     border-radius: 0 5px 5px 0;
 
 }
 
-.search-panel-button:hover {
+.search-button:hover {
     cursor: pointer;
 }
 
-.search-panel-input, .search-panel-button {
+.search-input, .search-button {
     height: 2.7rem;
     display: inline-block;
     border: none;

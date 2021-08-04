@@ -1,11 +1,11 @@
 import React from 'react';
-import './TopContainer.css';
+import './StockSlider.css';
 import Slider from 'react-slick';
 import slide1 from './applewatch_6_desktop.jpg';
 import slide2 from './iphone_11_desktop.jpg';
 import slide3 from './iphone_12_pro_desktop.jpg';
 
-class TopContainer extends React.Component {
+class StockSlider extends React.Component {
     render() {
         const settings = {
             dots: true,
@@ -17,16 +17,16 @@ class TopContainer extends React.Component {
             slidesToScroll: 1,
         };
         return (
-            <div className='section top-container'>
+            <div className='main__stock-slider'>
                 <Slider {...settings}>
                     <div>
-                        <img src={slide1} alt='appleWatches series 6' className='stock-slides'/>
+                        <img src={slide1} alt='appleWatches series 6' className='slide__img'/>
                     </div>
                     <div>
-                        <img src={slide2} alt='iPhones 11' className='stock-slides'/>
+                        <img src={slide2} alt='iPhones 11' className='slide__img'/>
                     </div>
                     <div>
-                        <img src={slide3} alt='iPhones 12' className='stock-slides'/>
+                        <img src={slide3} alt='iPhones 12' className='slide__img'/>
                     </div>
                 </Slider>
             </div>
@@ -34,4 +34,4 @@ class TopContainer extends React.Component {
     }
 }
 
-export default TopContainer
+export default StockSlider

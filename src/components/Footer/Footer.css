@@ -9,39 +9,36 @@ footer {
     height: 5.5rem
 }
 
-footer .section nav {
+.footer__navigate {
     display: grid;
     grid-template-columns: 3fr 1fr;
     height: 100%;
 }
 
-.navigate{
+.footer__useful{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     height: 100%;
 }
-.social-networks {
+.footer__social-networks {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     height: 100%;
 }
 
-.social-networks a img{
+.footer__social-networks a img{
     display: inline-block;
     width: 34px;
 }
 
-.navigate a, .social-networks a {
+.footer__useful a,
+.footer__social-networks a {
     text-decoration: none;
     color: white;
     margin: auto;
 }
 
-.social-networks a {
-    height: 34px;
-}
-
-.copyright {
+.footer__copyright {
     font-weight: bold;
     text-align: center;
 }

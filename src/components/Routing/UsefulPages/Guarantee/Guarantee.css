@@ -34,11 +34,11 @@
     text-decoration: none;
 }
 
-.service {
+.guarantee__service {
     display: grid;
     grid-template-columns: 1fr 12fr;
 }
 
-.phone {
+.phone_big-number {
     font-size: 1.5rem;
 }

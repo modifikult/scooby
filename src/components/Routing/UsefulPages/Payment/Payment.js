@@ -4,7 +4,7 @@ import './Payment.css';
 class Payment extends React.Component {
     render () {
         return (
-            <div className='section payment'>
+            <div className='payment'>
                 <h1>
                     Оплата
                 </h1>

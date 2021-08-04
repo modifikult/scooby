@@ -4,9 +4,9 @@ import './SearchPanel.css'
 class SearchPanel extends React.Component {
     render() {
         return (
-             <div className='search-panel-wrapper'>
-                <input type="text" className='search-panel-input' placeholder=' Введите название товара для поиска'/>
-                <button type='button' className='search-panel-button'>Поиск</button>
+             <div className='header__search-panel'>
+                <input type="text" className='search-input' placeholder=' Введите название товара для поиска'/>
+                <button type='button' className='search-button'>Поиск</button>
              </div>
         );
     }

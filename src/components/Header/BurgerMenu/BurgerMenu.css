@@ -1,24 +1,28 @@
-.menu-button span:nth-child(1) {
+.header__burger-menu {
+    margin: auto;
+}
+
+.header__burger-menu span {
+    width: 3rem;
+    display: block;
+    border-radius: 2px;
+}
+
+.header__burger-menu span:nth-child(1) {
     border-top: 3px solid white;
     margin-bottom: .7rem;
 }
 
-.menu-button span:nth-child(2) {
+.header__burger-menu span:nth-child(2) {
     border-bottom: 3px solid white;
 }
 
-.menu-button span:nth-child(3) {
+.header__burger-menu span:nth-child(3) {
     border-bottom: 3px solid white;
     margin-top: .7rem;
 }
 
-.menu-button:hover {
+.header__burger-menu:hover {
     cursor: pointer;
-}
-
-span {
-    width: 3rem;
-    display: block;
-    border-radius: 2px;
 }
 

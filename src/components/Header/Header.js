@@ -1,11 +1,10 @@
 import React from 'react'
-import logo from './logo.png'
 import './Header.css'
 import BurgerMenu from "./BurgerMenu/BurgerMenu";
 import SearchPanel from "./SearchPanel/SearchPanel";
 import Cart from "./Cart/Cart";
-import {Link} from "react-router-dom";
 import PopUpMenu from "./PopUpMenu/PopUpMenu";
+import Logo from "./Logo/Logo";
 
 class Header extends React.Component {
     state = {
@@ -19,38 +18,24 @@ class Header extends React.Component {
     componentDidUpdate(prevProps, prevState, snapshot) {
         const {isOpen} = this.state
         const body = document.querySelector('body')
-        if(prevState.isOpen !== isOpen) {
-            if(isOpen) {
+        if (prevState.isOpen !== isOpen) {
+            if (isOpen) {
                 body.style.overflow = 'hidden'
             } else {
                 body.style.overflow = 'visible'
             }
-
         }
     }
     render() {
         const isOpen = this.state.isOpen
-
         return (
             <>
                 <header>
-                    <div className="section">
-                        <div className='header-wrapper'>
-                            <div className='burger-menu'>
-                                <BurgerMenu isOpen={isOpen} updateIsOpen={this.updateIsOpen}/>
-                            </div>
-                            <div className="logo">
-                                <Link to='/'>
-                                    <img src={logo} alt="logo"/>
-                                </Link>
-                            </div>
-                            <div className="search-panel">
-                                <SearchPanel/>
-                            </div>
-                            <div className="cart">
-                                <Cart/>
-                            </div>
-                        </div>
+                    <div className='header__wrapper container '>
+                        <BurgerMenu isOpen={isOpen} updateIsOpen={this.updateIsOpen}/>
+                        <Logo/>
+                        <SearchPanel/>
+                        <Cart/>
                     </div>
                 </header>
                 <PopUpMenu isOpen={isOpen} updateIsOpen={this.updateIsOpen}/>
@@ -59,4 +44,4 @@ class Header extends React.Component {
     }
 }
 
-export default  Header
+export default Header
